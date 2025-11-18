@@ -9,14 +9,26 @@ keyof ব্যবহারের উদ্দেশ্য হলো কোন�
 type User = {
   id: number;
   name: string;
+  age: number;
   email: string;
 };
 
-type UserKeys = keyof User; // "id" | "name" | "email"
+type User_Keys = keyof User; // "id" | "name" | "age" | "email"
 
-function getValue(obj: User, key: UserKeys) {
+function getValue(obj: User, key: User_Keys) {
   return obj[key];
 }
+
+const person: User = {
+  id: 1,
+  name: "Irfan",
+  age: 23;
+  email: "irfan@example.com",
+};
+
+console.log(getValue(person, "email")); // ঠিকমতো কাজ করবে
+
+// console.log(getValue(person, "isActive")); // // ভুল কারণ "isActive" UserKeys এ নেই
 ```
 
 ## Q4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
