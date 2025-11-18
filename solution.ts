@@ -1,4 +1,4 @@
-// problem 01
+
 
 type Param = string | number | boolean;
 
@@ -13,7 +13,7 @@ function formatValue(param: Param): Param {
   return param;
 }
 
-// problem 02
+
 
 const getLength = (param: string | any[]): number => {
   if (typeof param === "string") {
@@ -25,7 +25,7 @@ const getLength = (param: string | any[]): number => {
   return 0;
 };
 
-// problem 03
+
 
 class Person {
   public name: string;
@@ -41,7 +41,6 @@ class Person {
   }
 }
 
-// problem 04
 
 interface Item {
   title: string;
@@ -56,7 +55,6 @@ function filterByRating(arr: Item[]): Item[] {
   return filterArr;
 }
 
-// problem 05
 
 interface UserObj {
   id: number;
@@ -83,7 +81,6 @@ function filterActiveUsers(userArray: UserObj[]): OnlyActiveUser[] {
 }
 
 
-// Problem no 6
 
 interface Book {
   title: string;
@@ -100,7 +97,6 @@ function printBookDetails(bookObj: Book) {
   );
 }
 
-// problem 07
 
 const getUniqueValues = <T extends string | number>(
   arr1: Array<T>,
@@ -137,7 +133,6 @@ const getUniqueValues = <T extends string | number>(
   return finalArr;
 };
 
-// problem 08
 
 interface Product {
   name: string;
